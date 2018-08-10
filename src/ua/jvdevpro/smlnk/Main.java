@@ -18,6 +18,10 @@ public class Main {
 
     private static boolean check(Object obj, Class<?> classOne) {
         Class<?> classTwo = obj.getClass(); // получение переменной типа Class для объекта;
+
+        /**Если класс объекта, который был первым параметром, совпадает с классом второго, то вернем true,
+         * а в противном случае false*/
+
         if (classOne == classTwo) {
             return true;
         } else return false;
